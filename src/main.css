@@ -1,7 +1,14 @@
+/*
+  Note:
+    Please use comment to group elements
+*/
+
 @import "tailwindcss";
 
+/*----------------V Standard classes below V----------------*/
+
 body {
-  background-color: rgb(41, 24, 21);
+  background-color: rgb(0, 5, 15);
   position: relative;
   display: flex;
   justify-content: center;
@@ -10,67 +17,24 @@ body {
 }
 
 footer {
-  font-family: var(--font-mono) antialiased;
-  font-weight: 800;
+  font-family: var(--font-mono);
   font-size: 14px;
-  color: rgb(255, 234, 230);
+  color: rgb(134, 134, 134);
+  text-shadow: var(--text-shadow-lg);
   text-align: center;
   z-index: 1;
 }
 
-.backgroundd {
-  background-image: url("/tlb.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 125%;
-  width: 150%;
-  height: 100%;
-  opacity: 30%;
-  top: 1%;
-  position: fixed;
-  z-index: 0;
-}
+/*------------------V Div classes below V------------------*/
 
-.finder {
-  background-color: #25070c;
-  width: 150%;
-  height: 49px;
-  position: fixed;
-  top: 0%;
-  align-items: center;
-  border-color: rgb(80, 27, 17);
-  border-bottom-width: 2px;
-  z-index: 1;
-}
-
-.aboutweb {
-  background-image: url("/favicon.ico");
-  background-repeat: no-repeat;
-  background-position: center;
-  object-fit: cover;
-  object-position: center;
-  position: fixed;
-  background-size: 60%;
-  top: -8px;
-  right: 50%;
-  left: 0.2%;
-  width: 64px;
-  height: 64px;
-  z-index: 2;
-}
-
-.huhpic {
-  color: #0a0004;
-}
-
-.on_scroll_pg { /*for pg anchor*/
+.on_scroll_pg { /*what under this class will scroll with the page*/
     position: relative;
 }
 
 .footer_anchor {
   position: fixed;
   top: 94%;
-  left: 48%;
+  left: 39%;
 }
 
 .git_logo {
@@ -81,80 +45,125 @@ footer {
   object-fit: cover;
   object-position: center;
   position: fixed;
-  top: 735px;
-  left: 64.9%;
+  top: 93%;
+  left: 56%;
   width: 32px;
   height: 32px;
   border-radius: 50px;
-  border-color: rgb(255, 230, 183);
+  border-color: rgb(185, 185, 255);
   border-width: 1px;
   z-index: 2;
 }
 
-.aboutweb {
-  font-family: var(--font-mono);
-  position: fixed;
-  top: -8px;
-  right: 50%;
-  left: 0.2%;
-  width: 64px;
-  height: 64px;
-  z-index: 2;
-}
+/*mac-win start*/
 
-.webtitle {
-  font-family: var(--font-mono);
-  font-weight: bold;
-  font-style: italic;
-  font-size: 24px;
-  align-items: baseline;
-  color: rgb(231, 180, 170);
+.mac-win-a {
   position: fixed;
-  top: 6px;
-  left: 4.5%;
+  top: 8%;
+  left: 5%;
+  width: 30%;
+  height: 3%;
+  background-color: rgb(36, 36, 36);
+  border-radius: 15px;
   z-index: 3;
 }
 
-.underline1 {
+.mac-win-b {
   position: fixed;
-  top: 33px;
-  left: 4.5%;
-  width: 40px;
-  height: 1.5px;
-  background-color: rgb(231, 180, 170);
-  border-radius: 25px;
+  top: 9.1%;
+  left: 5%;
+  width: 30%;
+  height: 3%;
+  background-color: rgb(36, 36, 36);
+  z-index: 3;
+}
+
+.mac-win-content {
+  position: fixed;
+  top: 11.5%;
+  left: 5%;
+  width: 30%;
+  height: 32%;
+  background-color: rgb(14, 14, 14);
   z-index: 2;
 }
 
-.underline2 {
+.mac-win-content-a {
   position: fixed;
-  top: 33px;
-  left: 8.6%;
-  width: 84px; /*142*/
-  height: 1.5px;
-  background-color: rgb(231, 180, 170);
-  border-radius: 25px;
+  top: 42.5%;
+  left: 5%;
+  width: 30%;
+  height: 2%;
+  background-color: rgb(14, 14, 14);
+  border-radius: 15px;
   z-index: 2;
 }
 
-.underline3 {
+
+.mac-win-quit {
   position: fixed;
-  top: 38px;
-  left: 4.5%;
-  width: 142px; /*142*/
-  height: 1.5px;
-  background-color: rgb(231, 180, 170);
-  border-radius: 25px;
-  z-index: 2;
+  top: 9%;
+  left: 5.5%;
+  width: 1%;
+  height: 1.8%;
+  background-color: rgb(211, 27, 27);
+  border-radius: 15px;
+  z-index: 3;
 }
 
-.listofwhatido {
+.mac-win-min {
   position: fixed;
-  top: 32px;
-  left: -1px;
-  width: 20%;
-  height: 112%;
-  background-color: #25070c;
-  overflow-y: scroll;
-  z-index: 0;
+  top: 9%;
+  left: 7%;
+  width: 1%;
+  height: 1.8%;
+  background-color: rgb(211, 183, 27);
+  border-radius: 15px;
+  z-index: 3;
 }
+
+.mac-win-full {
+  position: fixed;
+  top: 9%;
+  left: 8.5%;
+  width: 1%;
+  height: 1.8%;
+  background-color: rgb(40, 199, 0);
+  border-radius: 15px;
+  z-index: 3;
+}
+
+.mac-win-quit:hover {
+  position: fixed;
+  top: 9%;
+  left: 5.5%;
+  width: 1%;
+  height: 1.8%;
+  background-color: rgb(92, 11, 11);
+  border-radius: 15px;
+  z-index: 3;
+}
+
+.mac-win-min:hover {
+  position: fixed;
+  top: 9%;
+  left: 7%;
+  width: 1%;
+  height: 1.8%;
+  background-color: rgb(65, 56, 7);
+  border-radius: 15px;
+  z-index: 3;
+}
+
+.mac-win-full:hover {
+  position: fixed;
+  top: 9%;
+  left: 8.5%;
+  width: 1%;
+  height: 1.8%;
+  background-color: rgb(19, 68, 7);
+  border-radius: 15px;
+  z-index: 3;
+}
+
+/*mac-win end*/
