@@ -9,14 +9,36 @@
 
 body {
   background-color: rgb(0, 5, 15);
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 footer {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: rgb(134, 134, 134);
+  text-shadow: var(--text-shadow-lg);
+  text-align: center;
+  display: inline-flex;
+  z-index: 1;
+}
+
+input {
+  margin-bottom: 15px;
+  margin-top: 12px;
+  background-color: rgb(39, 39, 39);
+  text-align: center;
+  border-color: rgb(6, 6, 6);
+  border-width: 2px;
+  border-radius: 14px;
+  height: 24px;
+  z-index: 1;
+}
+
+label {
   font-family: var(--font-mono);
   font-size: 14px;
   color: rgb(134, 134, 134);
@@ -35,6 +57,9 @@ footer {
   position: fixed;
   top: 94%;
   left: 39%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
 }
 
 .git_logo {
@@ -43,15 +68,14 @@ footer {
   background-position: center;
   background-size: 100%;
   object-fit: cover;
-  object-position: center;
-  position: fixed;
-  top: 93%;
-  left: 56%;
+  position: relative;
+  top: -25%;
+  left: 110%;
   width: 32px;
   height: 32px;
   border-radius: 50px;
   border-color: rgb(185, 185, 255);
-  border-width: 1px;
+  border-width: 1.2px;
   z-index: 2;
 }
 
@@ -59,8 +83,8 @@ footer {
 
 .mac-win-a {
   position: fixed;
-  top: 8%;
-  left: 5%;
+  top: 28%;
+  left: 35%;
   width: 30%;
   height: 3%;
   background-color: rgb(36, 36, 36);
@@ -69,31 +93,33 @@ footer {
 }
 
 .mac-win-b {
-  position: fixed;
-  top: 9.1%;
-  left: 5%;
-  width: 30%;
-  height: 3%;
+  position: relative;
+  top: 60%;
+  width: 100%;
+  height: 125%;
   background-color: rgb(36, 36, 36);
   z-index: 3;
 }
 
 .mac-win-content {
-  position: fixed;
-  top: 11.5%;
-  left: 5%;
-  width: 30%;
-  height: 32%;
+  position: relative;
+  top: -70%;
+  width: 100%;
+  height: 550%;
   background-color: rgb(14, 14, 14);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   z-index: 2;
 }
 
 .mac-win-content-a {
-  position: fixed;
-  top: 42.5%;
-  left: 5%;
-  width: 30%;
-  height: 2%;
+  position: relative;
+  top: -110%;
+  width: 100%;
+  height: 100%;
   background-color: rgb(14, 14, 14);
   border-radius: 15px;
   z-index: 2;
@@ -101,69 +127,61 @@ footer {
 
 
 .mac-win-quit {
-  position: fixed;
-  top: 9%;
-  left: 5.5%;
-  width: 1%;
-  height: 1.8%;
+  position: relative;
+  top: -2%;
+  left: 3%;
+  width: 4%;
+  height: 55%;
   background-color: rgb(211, 27, 27);
   border-radius: 15px;
   z-index: 3;
 }
 
 .mac-win-min {
-  position: fixed;
-  top: 9%;
-  left: 7%;
-  width: 1%;
-  height: 1.8%;
+  position: relative;
+  top: -56%;
+  left: 8.3%;
+  width: 4%;
+  height: 56%;
   background-color: rgb(211, 183, 27);
   border-radius: 15px;
   z-index: 3;
 }
 
 .mac-win-full {
-  position: fixed;
-  top: 9%;
-  left: 8.5%;
-  width: 1%;
-  height: 1.8%;
+  position: relative;
+  top: -110%;
+  left: 13.6%;
+  width: 3.9%;
+  height: 57%;
   background-color: rgb(40, 199, 0);
   border-radius: 15px;
   z-index: 3;
 }
 
 .mac-win-quit:hover {
-  position: fixed;
-  top: 9%;
-  left: 5.5%;
-  width: 1%;
-  height: 1.8%;
   background-color: rgb(92, 11, 11);
-  border-radius: 15px;
-  z-index: 3;
 }
 
 .mac-win-min:hover {
-  position: fixed;
-  top: 9%;
-  left: 7%;
-  width: 1%;
-  height: 1.8%;
   background-color: rgb(65, 56, 7);
-  border-radius: 15px;
-  z-index: 3;
 }
 
 .mac-win-full:hover {
-  position: fixed;
-  top: 9%;
-  left: 8.5%;
-  width: 1%;
-  height: 1.8%;
   background-color: rgb(19, 68, 7);
-  border-radius: 15px;
-  z-index: 3;
 }
 
 /*mac-win end*/
+
+/*finder start*/
+
+.finder {
+  position: fixed;
+  z-index: 100;
+  top: 0%;
+  width: 100%;
+  height: 28px;
+  background-color: rgb(15, 15, 15);
+  z-index: 100;
+}
+
